@@ -160,3 +160,56 @@ Configure sua integração WhatsApp para enviar mensagens para esse endpoint.
 ---
 
 [← Voltar ao índice](../README.md)
+
+---
+
+<details>
+<summary>🇺🇸 English</summary>
+
+# 🏥 Virtual Clinic Secretary — Multi-Agent System
+
+> Medical care ecosystem with **multiple AI agents specialized per doctor** — each agent manages its own CRM (Airtable), schedule (Google Calendar) and serves via WhatsApp with voice and text.
+
+## 📌 What this workflow does
+
+A **central orchestrator** receives WhatsApp messages and automatically routes to the correct doctor's agent. Each agent is an independent virtual secretary with:
+
+- Humanized service in text **and audio** (synthesized voice)
+- Patient lookup and registration in CRM (Airtable)
+- Availability check and scheduling in Google Calendar
+- Per-patient session memory
+- Web search for additional information
+
+### Doctors configured in the template
+| Agent | Specialty | Tools |
+|---|---|---|
+| Dr. Francisco's Secretary | Plastic Surgery | CRM + Calendar + Web Search |
+| Dr. Roberto's Secretary | (configurable) | CRM + Calendar |
+| Dr. Janaina's Secretary | (configurable) | CRM + Calendar |
+
+### Use case
+Clinics with multiple professionals who need automated 24/7 WhatsApp service without a call center.
+
+## 🔧 Integrations
+
+| Service | Use |
+|---|---|
+| **WhatsApp / Webhook** | Message input channel |
+| **OpenAI GPT-4o** | Orchestrator + 3 service agents |
+| **OpenAI TTS** | Audio response generation |
+| **OpenAI Vision** | Reading images sent by patients |
+| **Airtable** | CRM — patient registration and lookup |
+| **Google Calendar** | Schedule and appointment management |
+| **SerpAPI** | Web search for additional information |
+
+## 📊 Workflow metrics
+
+| Metric | Value |
+|---|---|
+| Total nodes | 63 |
+| AI agents | 4 (1 orchestrator + 3 secretaries) |
+| Supported doctors | 3 (expandable) |
+| Response channels | Text + Audio |
+| LLM model | GPT-4o |
+
+</details>
