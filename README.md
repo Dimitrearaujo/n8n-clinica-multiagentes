@@ -159,7 +159,7 @@ Configure sua integração WhatsApp para enviar mensagens para esse endpoint.
 
 ---
 
-[← Voltar ao índice](../README.md)
+[← Back to profile](https://github.com/Dimitrearaujo)
 
 ---
 
